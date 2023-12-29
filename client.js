@@ -1,5 +1,5 @@
 async function registerServiceWorker() {
-    const register = await navigator.serviceWorker.register('/sw.js', {
+    const register = await navigator.serviceWorker.register('./sw.js', {
         scope: '/push-notification/'
     });
 
