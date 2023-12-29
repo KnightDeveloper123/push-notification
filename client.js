@@ -8,7 +8,7 @@ async function registerServiceWorker() {
         applicationServerKey: 'BPHcUQEW_OLPLwyiDJuK0POa2hNYClIr7boZHmbOmMjDnrr_NgzmM0_DQJU622sPFTYertotkv1tFmk1lFe7iNc',
     });
     console.log(subscription);
-    await fetch(`http://192.168.2.139:5001/subscribe`, {
+    await fetch(`https://backend-test-seven-virid.vercel.app/page/subscribe`, {
         method: "POST",
         body: JSON.stringify(subscription),
         headers: {
